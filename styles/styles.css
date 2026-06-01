@@ -181,8 +181,10 @@ button {
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
+  /* background-color: var(--link-color); */
+  background-color: #da291c;
+  /* color: var(--background-color); */
+  color: white;
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -193,8 +195,9 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
+  /* background-color: var(--link-hover-color); */
   cursor: pointer;
+  background-color: #bd261b;
 }
 
 button:disabled,
