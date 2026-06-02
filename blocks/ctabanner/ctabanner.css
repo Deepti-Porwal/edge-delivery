@@ -1,73 +1,90 @@
-/* Top campaign CTA bar */
+/* Top campaign CTA bar — image left, inverse pill button right */
 .ctabanner {
   background-color: var(--brand-purple);
   color: var(--brand-on-purple);
   font-family: var(--body-font-family);
-  font-size: var(--body-font-size-xs);
-  font-weight: 400;
-  line-height: 1.4;
-  padding: .75rem 5rem;
 }
 
-.ctabanner .default-content-wrapper {
+.ctabanner-inner {
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   max-width: var(--content-width);
   margin: 0 auto;
-  padding: 11px 24px;
-  text-align: center;
+  padding: 12px 24px;
 }
 
-.ctabanner p {
+.ctabanner-logo {
+  flex: 0 1 auto;
+  line-height: 0;
+}
+
+.ctabanner-logo picture,
+.ctabanner-logo p {
   margin: 0;
-  color: inherit;
+  line-height: 0;
 }
 
-.ctabanner a:any-link {
-  color: var(--brand-on-purple);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-transform: uppercase;
-  text-underline-offset: 3px;
+.ctabanner-logo img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: var(--ctabanner-logo-height);
+  max-width: min(300px, 58vw);
+  object-fit: contain;
 }
 
-.ctabanner a:any-link:hover,
-.ctabanner a:any-link:focus {
-  color: var(--brand-on-purple);
-  opacity: 0.88;
-  text-decoration: underline;
+.ctabanner-cta {
+  flex: 0 0 auto;
 }
 
-.ctabanner a.button:any-link {
-  display: inline;
+.ctabanner-cta .button-container {
+  margin: 0;
+}
+
+.ctabanner-cta a.button.secondary:any-link {
+  box-sizing: border-box;
+  display: inline-block;
   margin: 0;
   border: 0;
-  border-radius: 0;
-  padding: 0;
-  background: transparent;
-  font-family: inherit;
-  font-size: inherit;
+  border-radius: 2.4em;
+  padding: 0.65em 1.75em;
+  background-color: var(--background-color);
+  color: var(--brand-purple);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-xs);
   font-weight: 700;
-  line-height: inherit;
-  white-space: normal;
+  letter-spacing: 0.06em;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  box-shadow: none;
 }
 
-.ctabanner .icon {
-  display: inline-block;
-  height: 0.85em;
-  width: 0.85em;
-  margin-left: 0.35em;
-  vertical-align: -0.1em;
-}
-
-.ctabanner .icon img {
-  filter: brightness(0) invert(1);
+.ctabanner-cta a.button.secondary:any-link:hover,
+.ctabanner-cta a.button.secondary:any-link:focus {
+  background-color: #f5f5f5;
+  color: var(--brand-purple);
+  text-decoration: none;
 }
 
 @media (width >= 900px) {
-  .ctabanner .default-content-wrapper {
-    padding: 12px 32px;
+  .ctabanner-inner {
+    padding: 14px 32px;
+  }
+
+  .ctabanner-logo img {
+    max-height: var(--ctabanner-logo-height-desktop);
+    max-width: 340px;
+  }
+
+  .ctabanner-cta a.button.secondary:any-link {
+    padding: 0.75em 2.25em;
     font-size: var(--body-font-size-s);
   }
 }

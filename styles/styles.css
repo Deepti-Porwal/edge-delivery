@@ -17,11 +17,13 @@
   --dark-color: #505050;
   --text-color: #1a1a1a;
   --nav-text-color: #333;
-  --brand-purple: #4a2c5d;
+  --brand-purple: #462d5b;
+  --ctabanner-logo-height: 48px;
+  --ctabanner-logo-height-desktop: 56px;
   --brand-on-purple: #fff;
   --header-divider-color: #d8d8d8;
   --link-color: #4a2c5d;
-  --link-hover-color: #3a2249;
+  --link-hover-color: #362447;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
