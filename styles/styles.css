@@ -11,17 +11,21 @@
  */
 
 :root {
-  /* colors */
+  /* brand colors */
   --background-color: white;
   --light-color: #f8f8f8;
   --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --text-color: #1a1a1a;
+  --nav-text-color: #333;
+  --brand-purple: #4a2c5d;
+  --brand-on-purple: #fff;
+  --header-divider-color: #d8d8d8;
+  --link-color: #4a2c5d;
+  --link-hover-color: #3a2249;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --heading-font-family: roboto, roboto-fallback, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -36,8 +40,11 @@
   --heading-font-size-s: 24px;
   --heading-font-size-xs: 22px;
 
-  /* nav height */
+  /* layout */
+  --content-width: 1200px;
   --nav-height: 64px;
+  --header-logo-height: 48px;
+  --header-logo-height-desktop: 56px;
 }
 
 /* fallback fonts */
@@ -85,7 +92,7 @@ body.appear {
 }
 
 header {
-  height: var(--nav-height);
+  height: auto;
 }
 
 header .header,

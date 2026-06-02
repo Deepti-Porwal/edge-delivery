@@ -2,7 +2,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
   gap: 24px;
 }
@@ -22,6 +22,6 @@
 
 .cards > ul > li img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
 }

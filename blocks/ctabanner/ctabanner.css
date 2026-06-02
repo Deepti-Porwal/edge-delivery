@@ -1,0 +1,73 @@
+/* Top campaign CTA bar */
+.ctabanner {
+  background-color: var(--brand-purple);
+  color: var(--brand-on-purple);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-xs);
+  font-weight: 400;
+  line-height: 1.4;
+  padding: .75rem 5rem;
+}
+
+.ctabanner .default-content-wrapper {
+  box-sizing: border-box;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 11px 24px;
+  text-align: center;
+}
+
+.ctabanner p {
+  margin: 0;
+  color: inherit;
+}
+
+.ctabanner a:any-link {
+  color: var(--brand-on-purple);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-transform: uppercase;
+  text-underline-offset: 3px;
+}
+
+.ctabanner a:any-link:hover,
+.ctabanner a:any-link:focus {
+  color: var(--brand-on-purple);
+  opacity: 0.88;
+  text-decoration: underline;
+}
+
+.ctabanner a.button:any-link {
+  display: inline;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
+  white-space: normal;
+}
+
+.ctabanner .icon {
+  display: inline-block;
+  height: 0.85em;
+  width: 0.85em;
+  margin-left: 0.35em;
+  vertical-align: -0.1em;
+}
+
+.ctabanner .icon img {
+  filter: brightness(0) invert(1);
+}
+
+@media (width >= 900px) {
+  .ctabanner .default-content-wrapper {
+    padding: 12px 32px;
+    font-size: var(--body-font-size-s);
+  }
+}
