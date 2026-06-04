@@ -69,6 +69,17 @@
   text-decoration: underline;
 }
 
+.tabs .tabs-list button ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs .tabs-list button li {
+  margin: 0;
+}
+
+/* Tab panels */
 .tabs .tabs-panel {
   margin-top: 0;
   padding: 0;
@@ -78,4 +89,33 @@
 
 .tabs .tabs-panel[aria-hidden='true'] {
   display: none;
+}
+
+/* Cards inside tabs — matches cards.css */
+.tabs .tabs-panel .cards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  gap: 24px;
+}
+
+.tabs .tabs-panel .cards > ul > li {
+  border: 1px solid #dadada;
+  background-color: var(--background-color);
+}
+
+.tabs .tabs-panel .cards .cards-card-body {
+  margin: 16px;
+}
+
+.tabs .tabs-panel .cards .cards-card-image {
+  line-height: 0;
+}
+
+.tabs .tabs-panel .cards > ul > li img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
 }

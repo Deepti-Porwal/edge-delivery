@@ -264,3 +264,7 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+main .section.highlight {
+  background-color: var(--brand-purple);
+  color: var(--brand-on-purple);
+}
