@@ -268,3 +268,7 @@ main .section.highlight {
   background-color: var(--brand-purple);
   color: var(--brand-on-purple);
 }
+main .dark-theme {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
