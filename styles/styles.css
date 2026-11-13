@@ -18,6 +18,7 @@
   --text-color: #1a1a1a;
   --nav-text-color: #333;
   --brand-purple: #462d5b;
+  --brand-green: #087a5a;
   --ctabanner-logo-height: 48px;
   --ctabanner-logo-height-desktop: 56px;
   --brand-on-purple: #fff;
@@ -47,6 +48,12 @@
   --nav-height: 64px;
   --header-logo-height: 48px;
   --header-logo-height-desktop: 56px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 /* fallback fonts */
@@ -265,7 +272,7 @@ main .section.highlight {
   padding: 40px 0;
 }
 main .section.highlight {
-  background-color: var(--brand-purple);
+  background-color: var(--brand-green);
   color: var(--brand-on-purple);
 }
 main .dark-theme {

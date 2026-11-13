@@ -638,11 +638,6 @@ function decorateBlocks(main) {
  * @returns {Promise}
  */
 async function loadHeader(header) {
-  const ctaBlock = buildBlock('ctabanner', '');
-  header.append(ctaBlock);
-  decorateBlock(ctaBlock);
-  await loadBlock(ctaBlock);
-
   const headerBlock = buildBlock('header', '');
   header.append(headerBlock);
   decorateBlock(headerBlock);

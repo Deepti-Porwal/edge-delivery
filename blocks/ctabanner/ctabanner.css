@@ -1,17 +1,35 @@
-/* Top campaign CTA bar — image left, inverse pill button right */
+/* Full-width campaign banner — logo left, CTA right */
+main > .section.ctabanner-container {
+  margin: 0;
+  padding: 0;
+}
+
+main > .section.ctabanner-container > div {
+  max-width: none;
+  padding: 0;
+}
+
+.ctabanner-wrapper {
+  max-width: none;
+  padding: 0;
+}
+
 .ctabanner {
-  background-color: var(--brand-purple);
-  color: var(--brand-on-purple);
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--brand-green);
+  color: #fff;
   font-family: var(--body-font-family);
 }
 
 .ctabanner-inner {
   box-sizing: border-box;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+  width: 100%;
   max-width: var(--content-width);
   margin: 0 auto;
   padding: 12px 24px;
@@ -19,6 +37,8 @@
 
 .ctabanner-logo {
   flex: 0 1 auto;
+  min-width: 0;
+  max-width: 100%;
   line-height: 0;
 }
 
@@ -39,21 +59,24 @@
 
 .ctabanner-cta {
   flex: 0 0 auto;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .ctabanner-cta .button-container {
   margin: 0;
 }
 
-.ctabanner-cta a.button.secondary:any-link {
+.ctabanner .ctabanner-cta a:any-link {
   box-sizing: border-box;
   display: inline-block;
   margin: 0;
   border: 0;
   border-radius: 2.4em;
   padding: 0.65em 1.75em;
-  background-color: var(--background-color);
-  color: var(--brand-purple);
+  max-width: 100%;
+  background-color: var(--brand-green);
+  color: #fff;
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-xs);
   font-weight: 700;
@@ -62,14 +85,14 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  white-space: nowrap;
+  white-space: normal;
   box-shadow: none;
 }
 
-.ctabanner-cta a.button.secondary:any-link:hover,
-.ctabanner-cta a.button.secondary:any-link:focus {
-  background-color: #f5f5f5;
-  color: var(--brand-purple);
+.ctabanner .ctabanner-cta a:any-link:hover,
+.ctabanner .ctabanner-cta a:any-link:focus {
+  background-color: #064b3a;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -83,7 +106,7 @@
     max-width: 340px;
   }
 
-  .ctabanner-cta a.button.secondary:any-link {
+  .ctabanner .ctabanner-cta a:any-link {
     padding: 0.75em 2.25em;
     font-size: var(--body-font-size-s);
   }
