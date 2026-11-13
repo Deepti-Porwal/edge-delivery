@@ -19,12 +19,16 @@
   --nav-text-color: #333;
   --brand-purple: #462d5b;
   --brand-green: #087a5a;
+  --brand-green-banner: #168664;
+  --brand-green-dark: #065640;
+  --brand-green-light: #e8f3ee;
+  --brand-on-green: #fff;
   --ctabanner-logo-height: 48px;
   --ctabanner-logo-height-desktop: 56px;
-  --brand-on-purple: #fff;
+  --brand-on-purple: var(--brand-on-green);
   --header-divider-color: #d8d8d8;
-  --link-color: #4a2c5d;
-  --link-hover-color: #362447;
+  --link-color: var(--brand-green);
+  --link-hover-color: var(--brand-green-dark);
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -197,8 +201,8 @@ button {
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: #da291c;
-  color: white;
+  background-color: var(--brand-green);
+  color: var(--brand-on-green);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -210,7 +214,7 @@ a.button:focus,
 button:hover,
 button:focus {
   cursor: pointer;
-  background-color: #bd261b;
+  background-color: var(--brand-green-dark);
 }
 
 button:disabled,
@@ -221,9 +225,17 @@ button:disabled:hover {
 
 a.button.secondary,
 button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color);
+  background-color: var(--brand-green-light);
+  border: 2px solid var(--brand-green);
+  color: var(--brand-green);
+}
+
+a.button.secondary:hover,
+a.button.secondary:focus,
+button.secondary:hover,
+button.secondary:focus {
+  background-color: var(--brand-green);
+  color: var(--brand-on-green);
 }
 
 main img {
@@ -271,10 +283,12 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
 main .section.highlight {
   background-color: var(--brand-green);
-  color: var(--brand-on-purple);
+  color: var(--brand-on-green);
 }
+
 main .dark-theme {
   background-color: var(--dark-color);
   color: var(--light-color);
